@@ -1,0 +1,11 @@
+import pickle
+import pandas as pd
+
+file_path = "D:\\god of war\\WESAD\\WESAD\\S5\\S5.pkl"
+
+# Open the .pkl file in binary read mode
+with open(file_path, 'rb') as file:
+    # Load the data from the file with specific encoding
+    data = pickle.load(file, encoding='latin1')
+
+data
